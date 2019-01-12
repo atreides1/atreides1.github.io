@@ -1,2 +1,2 @@
-# atreides1.github.io
-(In progress) My personal webpage
+# My personal webpage
+Updated as of Jan. 2019

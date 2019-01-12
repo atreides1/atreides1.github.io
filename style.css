@@ -149,7 +149,7 @@ a:visited {
 .pic {
   flex: 50%; /* Set the width of the sidebar */
   background-color: #333;
-  background-image: url('./Img/me.jpg');
+  background-image: url('./Img/me.JPG');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -1,2 +1,2 @@
 # My personal webpage
-Updated as of Jan. 2019
+Updated as of July 2020

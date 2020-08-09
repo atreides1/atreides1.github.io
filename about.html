@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Mercy Bhakta | About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--W3 framework-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap">
+<!--Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Montserrat", sans-serif}
+h1,h2,h3,h4,h5, span {font-family: 'Nothing You Could Do', cursive;}
+.w3-third img{ margin-bottom: 20px; width:100%}
+</style>
+
+<body class="w3-dark-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-rightbar w3-border-black w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center w3-text-black"><b>Mercy<br>Bhakta</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">X</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">PROJECTS</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-black">ABOUT ME</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Mercy Bhakta</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:103px"></div>
+
+<!-- Center main content -->
+ <div class="w3-hide-small" style="margin-top:150px"></div>
+
+  <!-- Photo grid -->
+  <div class="w3-row-padding" style="margin-left: auto; margin-right: auto">
+
+    <div class="w3-third">
+      <img src="images/aboutme.png" style="width:100%; height:100%;" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+	  <img src="images/contact.png" style="width:100%; height:100%; background-color:white;" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+
+      <!-- Contact Links -->
+      <div class="w3-display-container w3-center w3-text-amber w3-padding-16" style="border: solid black; border-width: 5px">
+          <a href="mailto:mercybhakta@gmail.com?Subject=Hello%20World" style="margin-right: 20px;" target="_blank" class="fa fa-envelope w3-jumbo"></a>
+          <a href="https://www.linkedin.com/in/mercy-bhakta/" target="_blank" class="fa fa-linkedin w3-jumbo" style="margin-right: 20px;"></a>
+          <a href="https://github.com/atreides1" target="_blank" class="fa fa-github w3-jumbo"></a>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <img src="images/portrait.png" style="width:107%; height:100%; background-color:white; border: solid black; border-width: 4px" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+    </div>
+
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>

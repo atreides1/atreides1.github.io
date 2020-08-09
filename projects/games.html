@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Mercy Bhakta | Games</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap">
+<!--Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Montserrat", sans-serif}
+h1,h2,h3,h4,h5, span {font-family: 'Nothing You Could Do', cursive;}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer; border: solid black; border-width: 5px;}
+.w3-third img:hover{opacity: 1}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Mercy<br>Bhakta</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">X</a>
+  <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="../about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Mercy Bhakta</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+	  <img src="../images/games/Lila.png" style="width:100%" onclick="onClick(this)" alt="The title screen for Lila, a visual novella based around anxiety and mental health.">
+      <img src="../images/games/ReedZombieGame1.png" style="width:100%" onclick="onClick(this)" alt="The title screen for a text-based adventure game centered around surviving a zombie apocalypse.">
+      <!--add content here <img src="../images/gamesColor.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">-->
+      <!-- Links -->
+      <div class="w3-display-container w3-center w3-padding-16" style="border: solid black; border-width: 5px">
+          <a href="https://atreides1.github.io/Lara-and-Mercy-s-Game/" style="margin-right: 20px;" target="_blank">* Lila *</a><br>
+          <a href="https://github.com/atreides1/Reed-Zombie-Game" target="_blank" style="margin-right: 20px;">* Reed Zombie Game *</a><br>
+          <a href="./WishmakersPath.html" target="_blank">* The Wishmaker's Path*</a><br>
+      </div>
+    </div>
+
+    <div class="w3-third">
+	  <img src="../images/games/ReedZombieGame.png" style="width:100%" onclick="onClick(this)" alt="A scene from a text-based adventure game centered around surviving a zombie apocalypse.">
+      <img src="../images/games/WishmakersPath1.png" style="width:100%" onclick="onClick(this)" alt="A scene from the Wishmaker's Path, a text-based adventure game created with Twine.">
+      <img src="../images/games/gamesColor.png" style="width:100%" onclick="onClick(this)" alt="Games!">
+      <!--add content here <img src="../images/gamesColor.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">-->
+    </div>
+
+    <div class="w3-third">
+	  <img src="../images/games/WishmakersPath.png" style="width:100%" onclick="onClick(this)" alt="The title screen for Wishmaker's Path, a text-based adventure game created with Twine.">
+      <img src="../images/games/Lila1.png" style="width:100%" onclick="onClick(this)" alt=" A scene from Lila, a visual novella based around anxiety and mental health.">
+      <img src="../images/games/gamesColor.png" style="width:100%" onclick="onClick(this)" alt="Games!">
+      <!--add content here <img src="../images/gamesColor.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">-->
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <h3>Games</h3>
+        <p>Games are such a great way to stay connected <em>and</em> tell interactive stories. Plus, they work wonders for stress relief!</p>
+      </div>
+
+      <div class="w3-third w3-center w3-text-amber w3-padding-16">
+          <a href="mailto:mercybhakta@gmail.com?Subject=Hello%20World" style="margin-right: 20px;" target="_blank" class="fa fa-envelope w3-jumbo"></a>
+          <a href="https://www.linkedin.com/in/mercy-bhakta/" target="_blank" class="fa fa-linkedin w3-jumbo" style="margin-right: 20px;"></a>
+          <a href="https://github.com/atreides1" target="_blank" class="fa fa-github w3-jumbo"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
